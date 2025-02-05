@@ -58,7 +58,7 @@ LABEL maintainer='https://twitter.com/sickcodes <https://sick.codes>'
 SHELL ["/bin/bash", "-c"]
 
 # change disk size here or add during build, e.g. --build-arg VERSION=10.14.5 --build-arg SIZE=50G
-ARG SIZE=200G
+ARG SIZE=64G
 ARG PARALLEL_DOWNLOADS=30
 
 # OPTIONAL: Arch Linux server mirrors for super fast builds
@@ -357,7 +357,7 @@ VOLUME ["/tmp/.X11-unix"]
 # If BaseSystem.img does not exist, download ${SHORTNAME}
 
 # shortname default is catalina, which means :latest is catalina
-ENV SHORTNAME=sonoma
+ENV SHORTNAME=ventura
 
 ENV BASESYSTEM_IMAGE=BaseSystem.img
 
